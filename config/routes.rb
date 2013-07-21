@@ -1,4 +1,6 @@
 Appoint::Application.routes.draw do
+  devise_for :doctors
+
   resources :patients
 
   root to: "pages#index"

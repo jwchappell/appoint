@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
 
 	def index
+		@patients = Patient.all
 	end
 
 	def about
