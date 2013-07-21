@@ -76,7 +76,8 @@
                 <li class="nav-header">Sidebar</li>
                 <% if doctor_signed_in? %>
                 <li><%= link_to "Patients", "/patients"  %></li>
-               
+                <li><%= link_to "Add new appointment" , new_appointment_url%></li>
+                <li><%= link_to "My Appointments" , appointments_url%></li>
               
                 <%end%>
               </ul>

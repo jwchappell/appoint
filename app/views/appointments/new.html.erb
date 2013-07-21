@@ -1,0 +1,12 @@
+<h1>New Appointment</h1>
+
+<%= simple_form_for @appointment do |f| %>
+
+	<%= f.input :reason, hint: 'Please make as specific as possible' %>
+	<%= f.input :date %>
+	<%= f.association :doctor, label_method: :email, prompt: 'Please choose a doctor' %>
+	<%= f.association :patient, prompt: 'Please choose a patient' %>
+
+	<%= f.submit %>
+
+<% end %>

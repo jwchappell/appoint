@@ -1,0 +1,14 @@
+<h1>My appointments</h1>
+
+
+<ul>
+	<% @appointments.each do |appointment| %>
+	<li><%= appointment.date.to_s(:short) %>
+		- <%= appointment.patient.name %> - <%=appointment.reason %></li>
+
+	<% end %>
+
+
+
+
+</ul>	
